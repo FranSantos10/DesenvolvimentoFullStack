@@ -1,2 +1,2 @@
 # DesenvolvimentoFullStack
-Desenvolvimento Full Stack - Especialização em Desenvolvimento-Full-Stack - PUCRS
+Desenvolvimento Full Stack - Especialização em Desenvolvimento-Full-Stack - PUCRS.
