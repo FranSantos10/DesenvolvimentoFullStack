@@ -1,0 +1,29 @@
+<input placeholder="Distancia em KM" id="campoDistanciaEmKm">
+<input placeholder="Tempo em minutos" id="campoTempoEmMin">
+<button onclick="CalcularCorrida()">Calcular</button>
+
+<script>
+    //validação
+    var campoDistanciaEmKmIsNull = campoDistanciaEmKm.value == ''
+
+    if (campoDistanciaEmKmIsNull) {
+        alert('Informe o valor da distancia!')
+    }
+    function formataMoeda(valor) {
+        valor = valor.toFixed(2).replace('.', ',')
+        return valor
+    }
+
+    function CalcularCorrida() {
+        //organizar as entradas
+        var tarifaDinamica = 1.4
+        var distanciaEmKm = campoDistanciaEmKm.value * tarifaDinamica
+        var TempoEmMin = campoTempoEmMin.value * 0.26
+        var valorCorrida = distanciaEmKm + TempoEmMin
+
+        alert('O valor da corrida e:' + formataMoeda(valorCorrida))
+    }
+
+
+
+</script>
