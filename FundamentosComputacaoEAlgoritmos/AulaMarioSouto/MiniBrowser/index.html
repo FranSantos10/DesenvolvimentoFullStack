@@ -1,0 +1,47 @@
+<!-- 
+<main>
+    <header>
+        <div class="close-area"></div>
+        <input placeholder="https://..." value="https://mariosouto.com" />
+        <link rel="stylesheet" href="./style.css" />
+    </header>
+    <iframe src="https://mariosouto.com"></iframe>
+</main>
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser Exprimental</title>
+</head>
+
+<body>
+    <script>
+        //Objetos: que representa coisas com multiplos atributos pra representalos
+        var aba1 = {
+            titulo: 'Titulo da aba 1',
+            url: 'https://www.google.com.br/?hl=pt-BR'
+        }
+        var aba2 = {
+            titulo: 'Titulo da aba 2',
+            url: 'https://www.youtube.com.br/'
+        }
+        //entrada
+        //Arrays: listas de coisas
+        const abas = [
+            aba1, aba2
+        ]
+
+        //processamento
+        for (aba of abas) {
+            var valorAtual = document.body.innerHTML
+            document.body.innerHTML = valorAtual + `<li><a href="${aba.url}">${aba.titulo}</a></li>`
+        }
+        //  document.body.innerHTML = 'Hello world!'
+
+    </script>
+   <!--  <link rel="stylesheet" href="./style.css" /> -->
+</body>
+
+</html>

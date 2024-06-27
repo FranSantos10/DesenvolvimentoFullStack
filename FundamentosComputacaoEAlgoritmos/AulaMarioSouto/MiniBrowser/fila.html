@@ -1,0 +1,48 @@
+<script>
+    //FIFO
+    console.log('Fila/Queue')
+
+    var fila = [
+        'javascript',
+        'style.css',
+        'imagem.png',
+    ]
+    //adiciona na fila
+    fila.push('texto.txt')
+    //remove o primeiro da fila
+    fila.shift()
+
+    /*
+    - enqueue - enfileirar
+    - dequeue - desinfileirar
+    */
+
+    class Queue {
+        constructor() {
+            this.data = []
+
+        }
+
+        print() {
+            console.log(this.data)
+        }
+
+        enqueue(item) {
+            this.data.push(item)
+        }
+
+        dequeue() {
+            this.data.shift()
+        }
+    }
+
+    //first codigo
+    var requests = new Queue()// 
+
+    requests.enqueue('javascript')
+    requests.enqueue('style.css')
+    requests.enqueue('imagem.png')
+    requests.print()
+    requests.dequeue()
+    requests.print()
+</script>
