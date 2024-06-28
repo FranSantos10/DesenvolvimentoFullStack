@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var novoMapa = new Map()
+        //guarda oo que é diferente e não repete
+
+        novoMapa.set('11/11/2011 - 23:30 - URL', { title: 'Titulo do site', url: 'http://www.youtube.com' })
+        novoMapa.set('11/11/2011 - 23:30 - URL', { title: 'Titulo do site', url: 'http://www.youtube.com' })
+        novoMapa.set('11/11/2011 - 23:30 - URL', { title: 'Titulo do site', url: 'http://www.youtube.com' })
+        novoMapa.set('11/11/2011 - 23:31 - URL', { title: 'Titulo do site', url: 'http://www.youtube.com' })
+
+        var resultado = novoMapa
+       // var resultado = novoMapa.get('11/11/2011 - 23:31 - URL')
+        console.log(resultado)
+    </script>
+</body>
+
+</html>

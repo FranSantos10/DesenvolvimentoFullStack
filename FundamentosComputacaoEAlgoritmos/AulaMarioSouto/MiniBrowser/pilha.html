@@ -1,0 +1,36 @@
+<script>
+    //LIFO
+    console.log('Pilha/Stack')
+
+    class HistoryStack {
+
+        constructor() {
+            this.cursor = 0
+            this.data = []
+        }
+        print() {
+            console.log('Cursor: '+this.cursor)
+            console.log('Itens: '+this.data)
+        }
+        push(item) {
+            this.cursor = this.cursor +1
+            this.data.push(item) 
+        }
+        back() {
+            this.cursor = this.cursor -1
+            this.data.shift()
+        }
+    }
+
+    const history = new HistoryStack()
+
+    history.push('https://google.com')
+    history.push('https://youtube.com')
+    history.push('https://facebook.com')
+    history.print()
+    history.back()
+    history.print()
+
+
+
+</script>
